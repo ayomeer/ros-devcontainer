@@ -1,0 +1,17 @@
+{
+    "remoteUser": "ros",
+    "name": "ros-devcontainer",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/src",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools-extension-pack"
+			]
+        }
+    },
+    "shutdownAction": "stopCompose"
+}
