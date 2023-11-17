@@ -3,7 +3,7 @@
     "name": "ros-devcontainer",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/src",
+    "workspaceFolder": "/home/ros/dev_ws",
     "customizations": {
         "vscode": {
             "extensions": [

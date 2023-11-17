@@ -1,16 +1,16 @@
 services:
   app: 
-    image: ros-devcontainer
+    image: althack-dev
     container_name: ros-devcontainer
     network_mode: host  # needed, so host.docker.internal points to actual host IP
                         # and not Docker subnet
     volumes:
-      - ../src:/src     # mount project directory
+      - ../dev_ws:/home/ros/dev_ws     # mount project directory
+      - /dev/input:/dev/input/
 
-    devices:
-      - /dev/input/js0:/dev/input/js0  
-      - /dev/input/event0:/dev/input/event0  
-      
+    device_cgroup_rules:
+      - 'c *:* rmw'
+
     environment:
      - DISPLAY=host.docker.internal:0.0 # set display environment to local host IP
      - MPLBACKEND=TkAgg                 # set matplotlib backend to graphics capable one
