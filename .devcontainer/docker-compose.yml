@@ -5,7 +5,7 @@ services:
     network_mode: host  # needed, so host.docker.internal points to actual host IP
                         # and not Docker subnet
     volumes:
-      - ../dev_ws:/home/ros/dev_ws     # mount project directory
+      - ..:/home/ros/proj       # mount project directory
       - /dev/input:/dev/input/
 
     device_cgroup_rules:

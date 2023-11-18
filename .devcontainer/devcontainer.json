@@ -3,13 +3,14 @@
     "name": "ros-devcontainer",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/home/ros/dev_ws",
+    "workspaceFolder": "/home/ros/proj/dev_ws",
     "customizations": {
         "vscode": {
             "extensions": [
 				"ms-vscode.cpptools",
 				"ms-vscode.cmake-tools",
-				"ms-vscode.cpptools-extension-pack"
+				"ms-vscode.cpptools-extension-pack",
+				"ms-python.python"
 			]
         }
     },
