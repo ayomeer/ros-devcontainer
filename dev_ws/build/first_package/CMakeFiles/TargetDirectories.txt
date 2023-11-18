@@ -1,9 +1,0 @@
-/home/ros/dev_ws/build/first_package/CMakeFiles/uninstall.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/first_package_uninstall.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/test.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/edit_cache.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/rebuild_cache.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/list_install_components.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/install.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/install/local.dir
-/home/ros/dev_ws/build/first_package/CMakeFiles/install/strip.dir

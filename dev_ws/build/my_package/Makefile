@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ros/dev_ws/src/my_package
+CMAKE_SOURCE_DIR = /home/ros/proj/dev_ws/src/my_package
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ros/dev_ws/build/my_package
+CMAKE_BINARY_DIR = /home/ros/proj/dev_ws/build/my_package
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/dev_ws/build/my_package/CMakeFiles /home/ros/dev_ws/build/my_package//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/proj/dev_ws/build/my_package/CMakeFiles /home/ros/proj/dev_ws/build/my_package//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/dev_ws/build/my_package/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/proj/dev_ws/build/my_package/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -197,43 +197,6 @@ my_package_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_package_uninstall.dir/build.make CMakeFiles/my_package_uninstall.dir/build
 .PHONY : my_package_uninstall/fast
 
-#=============================================================================
-# Target rules for targets named my_node
-
-# Build rule for target.
-my_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_node
-.PHONY : my_node
-
-# fast build rule for target.
-my_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/build
-.PHONY : my_node/fast
-
-src/my_node.o: src/my_node.cpp.o
-.PHONY : src/my_node.o
-
-# target to build an object file
-src/my_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/my_node.cpp.o
-.PHONY : src/my_node.cpp.o
-
-src/my_node.i: src/my_node.cpp.i
-.PHONY : src/my_node.i
-
-# target to preprocess a source file
-src/my_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/my_node.cpp.i
-.PHONY : src/my_node.cpp.i
-
-src/my_node.s: src/my_node.cpp.s
-.PHONY : src/my_node.s
-
-# target to generate assembly for a file
-src/my_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/my_node.cpp.s
-.PHONY : src/my_node.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,10 +212,6 @@ help:
 	@echo "... test"
 	@echo "... my_package_uninstall"
 	@echo "... uninstall"
-	@echo "... my_node"
-	@echo "... src/my_node.o"
-	@echo "... src/my_node.i"
-	@echo "... src/my_node.s"
 .PHONY : help
 
 
