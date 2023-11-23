@@ -1,6 +1,6 @@
 services:
   app: 
-    image: althack-dev
+    image: althack-full
     container_name: ros-devcontainer
     network_mode: host  # needed, so host.docker.internal points to actual host IP
                         # and not Docker subnet

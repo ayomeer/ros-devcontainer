@@ -1,0 +1,6 @@
+[console_scripts]
+controller_executable = my_robot_controller.turtle_controller:main
+draw_circle_executable = my_robot_controller.draw_circle:main
+node_executable = my_robot_controller.my_first_node:main
+pose_subscriber_executable = my_robot_controller.pose_subscriber:main
+

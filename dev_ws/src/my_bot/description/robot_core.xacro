@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="materials.xacro"/>
+
+    <!-- Robot dimensions -->
+    <xacro:property name="body_length" value="0.24"/>
+    <xacro:property name="body_width" value="0.24"/>
+    <xacro:property name="body_height" value="0.12"/>
+
+    <!-- Robot base (between drive wheels) -->
+    <link name="base_link"/>
+
+    <!-- Body -->
+    <joint name="body_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="body_link"/> 
+        <origin xyz="0 0 ${body_height/2}"/>
+    </joint>
+
+    <link name="body_link">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${body_length} ${body_width} ${body_height}"/>
+            </geometry>
+            <material name="white"/>
+        </visual>
+    </link>
+
+    <!-- Drive wheels -->
+
+</robot>
