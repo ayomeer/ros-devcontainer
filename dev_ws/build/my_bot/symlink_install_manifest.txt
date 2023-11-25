@@ -1,4 +1,5 @@
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+/home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/inertia_macros.xacro
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/materials.xacro
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/my_bot.urdf.xacro
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/robot_core.xacro
