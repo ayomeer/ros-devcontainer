@@ -36,10 +36,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     sudo \
     software-properties-common \
     wget \
-    usbutils \
-    jstest-gtk \
-    terminator \
     && rm -rf /var/lib/apt/lists/*
+
+# fix jstest first time launch error
+RUN mkdir -p /home/ros/.config
 
 # Install ROS2
 RUN sudo add-apt-repository universe \
@@ -78,10 +78,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   ros-dev-tools \
   ros-humble-ament-* \
   ros-humble-xacro \
-  ros-humble-joint-state-publuisher \
-  ros-humble-joint-state-publuisher-gui \
+  ros-humble-joint-state-publisher \
+  ros-humble-joint-state-publisher-gui \
   nano \
+  usbutils \
+  jstest-gtk \
+  evtest \
+  terminator \
   && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get install ros-humble-joy-tester
+RUN pip3 install ipython
 
 RUN rosdep init || echo "rosdep already initialized"
 
@@ -137,10 +144,18 @@ RUN wget https://packages.osrfoundation.org/gazebo.gpg -O /usr/share/keyrings/pk
   && rm -rf /var/lib/apt/lists/*
 ENV DEBIAN_FRONTEND=
 
+# gazebo no audio card error message fix
+RUN touch /etc/asound.conf \
+  && cat >> /etc/asound.conf << EOF \
+pcm.!default { \
+  type plug \
+  slave.pcm "null" \
+} \
+EOF
+
 ###########################################
 #  Full+Gazebo+Nvidia image
 ###########################################
-
 FROM gazebo AS gazebo-nvidia
 
 ################

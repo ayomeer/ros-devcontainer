@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "description" "DESTINATION" "share/my_bot")
-ament_cmake_symlink_install_directory("/home/ros/proj/dev_ws/src/my_bot" DIRECTORY "launch" "description" "DESTINATION" "share/my_bot")
+# install(DIRECTORY "config" "launch" "description" "DESTINATION" "share/my_bot")
+ament_cmake_symlink_install_directory("/home/ros/proj/dev_ws/src/my_bot" DIRECTORY "config" "launch" "description" "DESTINATION" "share/my_bot")
 
 # install(FILES "/home/ros/proj/dev_ws/build/my_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ros/proj/dev_ws/src/my_bot" FILES "/home/ros/proj/dev_ws/build/my_bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_bot" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

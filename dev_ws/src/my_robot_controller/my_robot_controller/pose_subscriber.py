@@ -16,6 +16,6 @@ def main(args=None):
     rclpy.init(args=args)       
     
     node = PoseSubscriberNode()
-    rclpy.spin(node)            
+    rclpy.spin(node)          
 
     rclpy.shutdown()            

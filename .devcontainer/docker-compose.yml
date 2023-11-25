@@ -1,6 +1,7 @@
 services:
   app: 
-    image: althack-full
+    image: althack-gazebo-gpu
+    user: "1000:1000"
     container_name: ros-devcontainer
     network_mode: host  # needed, so host.docker.internal points to actual host IP
                         # and not Docker subnet
@@ -10,6 +11,14 @@ services:
 
     device_cgroup_rules:
       - 'c *:* rmw'
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu] # equivalent of '--gpus=all' in docker run command
 
     environment:
      - DISPLAY=host.docker.internal:0.0 # set display environment to local host IP

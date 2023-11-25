@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Launch rsp",
+            "command": "bash",
+            "type": "shell",
+            "args": [
+                "-i", "-c",
+                "ros2 launch my_bot rsp.launch.py use_sim_time:=${input:sim_time}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Launch gazebo_ros",
+            "command": "ros2 launch gazebo_ros gazebo.launch.py",
+            "type": "shell",
+            "problemMatcher": []
+        },
+        {
+            "label": "Gazebo spawn bot",
+            "command": "ros2 run gazebo_ros spawn_entity.py -topic robot_description -entity bot_name",
+            "type": "shell",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "sim_time",
+            "type": "pickString",
+            "description": "sim_time enabled?",
+            "options": ["true", "false"],
+            "default": "false"
+        }
+    ]
+}

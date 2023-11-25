@@ -1,5 +1,6 @@
 {
     "remoteUser": "ros",
+    "updateRemoteUserUID": false, 
     "name": "ros-devcontainer",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
@@ -10,7 +11,10 @@
 				"ms-vscode.cpptools",
 				"ms-vscode.cmake-tools",
 				"ms-vscode.cpptools-extension-pack",
-				"ms-python.python"
+				"ms-python.python",
+                "ms-iot.vscode-ros",
+                "redhat.vscode-xml"
+
 			]
         }
     },
