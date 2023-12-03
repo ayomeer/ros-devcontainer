@@ -1,16 +1,12 @@
 services:
   app: 
-    image: ayomeer/ros-devcontainer:althack-gazebo-gpu
+    image: ayomeer/ros-devcontainer:dev
     user: "1000:1000"
-    container_name: ros-devcontainer
+    container_name: ros-container
     network_mode: host  # needed, so host.docker.internal points to actual host IP
                         # and not Docker subnet
     volumes:
-      - ..:/home/ros/proj       # mount project directory
-      - /dev/input:/dev/input/
-
-    device_cgroup_rules:
-      - 'c *:* rmw'
+      - ..:/home/ros/proj # mount project directory
 
     deploy:
       resources:

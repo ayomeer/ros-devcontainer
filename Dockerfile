@@ -80,6 +80,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   ros-humble-xacro \
   ros-humble-joint-state-publisher \
   ros-humble-joint-state-publisher-gui \
+  ros-humble-joy-tester \
   nano \
   usbutils \
   jstest-gtk \
@@ -87,7 +88,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   terminator \
   && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get install ros-humble-joy-tester
 RUN pip3 install ipython
 
 RUN rosdep init || echo "rosdep already initialized"
