@@ -1,0 +1,18 @@
+<!--Pi config (net=host)-->
+<?xml version="1.0"?>
+<CycloneDDS>
+  <Domain id="any">
+    <General>
+      <Interfaces>
+        <NetworkInterface name="wlan0"/>
+      </Interfaces>
+      <AllowMulticast>false</AllowMulticast>
+    </General>
+    <Discovery>
+      <ParticipantIndex>1</ParticipantIndex> 
+      <Peers>
+        <Peer Address="192.168.1.110"/>
+      </Peers>
+    </Discovery>
+  </Domain>
+</CycloneDDS>

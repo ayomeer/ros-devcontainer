@@ -3,26 +3,28 @@ services:
     image: ayomeer/ros-devcontainer:althack-gazebo-gpu
     user: "1000:1000"
     container_name: ros-devcontainer
-    network_mode: host  # needed, so host.docker.internal points to actual host IP
-                        # and not Docker subnet
+    network_mode: host  
+
     volumes:
       - ..:/home/ros/proj       # mount project directory
-      - /dev/input:/dev/input/
+      - /dev/input:/dev/input/  # pass through devices (xpad)
+      - /tmp/.X11-unix:/tmp/.X11-unix # display
+
+
 
     device_cgroup_rules:
       - 'c *:* rmw'
 
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu] # equivalent of '--gpus=all' in docker run command
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu] # equivalent of '--gpus=all' in docker run command
 
     environment:
-     - DISPLAY=host.docker.internal:0.0 # set display environment to local host IP
-     - MPLBACKEND=TkAgg                 # set matplotlib backend to graphics capable one
+     - DISPLAY=$DISPLAY
     
     stdin_open: true
     tty: true

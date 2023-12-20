@@ -1,0 +1,21 @@
+
+
+<!--PC config (net=host)-->
+<?xml version="1.0"?>
+<CycloneDDS>
+  <Domain id="any">
+    <General>
+      <Interfaces>
+        <NetworkInterface name="enp3s0"/>
+      </Interfaces>
+      <AllowMulticast>false</AllowMulticast>
+    </General>
+    <Discovery>
+      <ParticipantIndex>0</ParticipantIndex>
+      <Peers>
+        <Peer Address="192.168.1.114"/>
+      </Peers>
+    </Discovery>
+  </Domain>
+</CycloneDDS>
+
