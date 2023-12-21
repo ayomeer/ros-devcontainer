@@ -94,7 +94,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   ros-humble-joint-state-publisher-gui \
   ros-humble-joy-tester \
   ros-humble-demo-nodes-py \
-  ros-humble-demo-nodes-cpp \
+  ros-humble-demo-nodes-cpp \ 
+  ros-humble-image-transport-plugins \
+  ros-humble-rqt-image-view \ 
+  ros-humble-v4l2-camera \
+  v4l-utils \
   iputils-ping \
   net-tools \
   nano \

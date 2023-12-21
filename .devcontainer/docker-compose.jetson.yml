@@ -1,0 +1,30 @@
+services:
+  app: 
+    image: ayomeer/ros-devcontainer:dev-jetson
+    user: "1000:1000"
+    container_name: ros-devcontainer
+    network_mode: host  
+
+    volumes:
+      - ..:/home/ros/proj       # mount project directory
+      - /dev/input:/dev/input/  # pass through devices (xpad)
+      - /tmp/.X11-unix:/tmp/.X11-unix # display
+
+
+
+    device_cgroup_rules:
+      - 'c *:* rmw'
+
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu] # equivalent of '--gpus=all' in docker run command
+
+    environment:
+     - DISPLAY=$DISPLAY
+    
+    stdin_open: true
+    tty: true
