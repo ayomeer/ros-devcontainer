@@ -9,6 +9,9 @@ FROM ubuntu:22.04 AS base
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+# automatic buildx arg
+ARG TARGETPLATFORM
+
 # Install language
 RUN apt-get update && apt-get install -y \
   locales \
@@ -66,24 +69,47 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-rmw-cyclonedds-cpp && \
     export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
-RUN echo -e \
-"<?xml version='1.0'?> \n\
-<CycloneDDS> \n\
-  <Domain id='any'> \n\
-    <General> \n\
-      <Interfaces> \n\
-        <NetworkInterface name='enp3s0'/> \n\
-      </Interfaces> \n\
-      <AllowMulticast>false</AllowMulticast> \n\
-    </General> \n\
-    <Discovery> \n\
-      <ParticipantIndex>auto</ParticipantIndex> \n\
-      <Peers> \n\
-        <Peer Address='192.168.1.111'/> \n\
-      </Peers> \n\
-    </Discovery> \n\
-  </Domain> \n\
-</CycloneDDS>" > /opt/cycloneConfig_PC.xml
+# write DDS config based on automatic buildx arg (arm64 -> Jetson, else -> pc)
+RUN case "${TARGETPLATFORM}" in \
+    "linux/arm64") \
+      echo -e \
+      "<?xml version='1.0'?> \n\
+      <CycloneDDS> \n\
+        <Domain id='any'> \n\
+          <General> \n\
+            <Interfaces> \n\
+              <NetworkInterface name='wlan0'/> \n\
+            </Interfaces> \
+            <AllowMulticast>false</AllowMulticast> \n\
+          </General> \n\
+          <Discovery> \n\
+            <ParticipantIndex>auto</ParticipantIndex> \n\
+            <Peers> \n\
+              <Peer Address='192.168.1.110'/> \n\
+            </Peers> \n\
+          </Discovery> \n\
+        </Domain> \n\
+      </CycloneDDS>" > /opt/cycloneConfig_PC.xml ;; \  
+    *) \
+      echo -e \
+      "<?xml version='1.0'?> \n\
+      <CycloneDDS> \n\
+        <Domain id='any'> \n\
+          <General> \n\
+            <Interfaces> \n\
+              <NetworkInterface name='enp3s0'/> \n\
+            </Interfaces> \n\
+            <AllowMulticast>false</AllowMulticast> \n\
+          </General> \n\
+          <Discovery> \n\
+            <ParticipantIndex>auto</ParticipantIndex> \n\
+            <Peers> \n\
+              <Peer Address='192.168.1.111'/> \n\
+            </Peers> \n\
+          </Discovery> \n\
+        </Domain> \n\
+      </CycloneDDS>" > /opt/cycloneConfig_PC.xml ;;\
+  esac;
 
 RUN export CYCLONEDDS_URI=/opt/cycloneConfig_PC.xml
 
@@ -138,6 +164,9 @@ RUN groupadd --gid $USER_GID $USERNAME \
   && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
   && chmod 0440 /etc/sudoers.d/$USERNAME \
   && rm -rf /var/lib/apt/lists/*
+
+# Give new user rights to its own home dir
+RUN chown 1000:1000 /home/ros
 
 # Set up autocompletion for user
 RUN apt-get update && apt-get install -y git-core bash-completion \
