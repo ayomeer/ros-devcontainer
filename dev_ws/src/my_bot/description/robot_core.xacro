@@ -14,7 +14,7 @@
     <xacro:property name="wheel_xoffset" value="0.025"/>
     <xacro:property name="wheel_zoffset" value="0.02"/>
 
-    <xacro:property name="caster_radius" value="${wheel_radius-wheel_zoffset}"/>
+    <xacro:property name="caster_radius" value="${wheel324PA_radius-wheel_zoffset}"/>
     <xacro:property name="caster_xoffset" value="${body_length-caster_radius}"/>
 
     <!-- Robot base (between drive wheels) -->

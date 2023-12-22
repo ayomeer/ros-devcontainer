@@ -1,6 +1,6 @@
 services:
   app: 
-    image: ayomeer/ros-devcontainer:althack-gazebo-gpu
+    image: ayomeer/ros-devcontainer:gazebo-nvidia
     user: "1000:1000"
     container_name: ros-devcontainer
     network_mode: host  

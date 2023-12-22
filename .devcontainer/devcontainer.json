@@ -1,7 +1,7 @@
 {
     "remoteUser": "ros",
-    "updateRemoteUserUID": false, 
     "name": "ros-devcontainer",
+    "updateRemoteUserUID": false, 
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/home/ros/proj/dev_ws",
@@ -14,7 +14,6 @@
 				"ms-python.python",
                 "ms-iot.vscode-ros",
                 "redhat.vscode-xml"
-
 			]
         }
     },
