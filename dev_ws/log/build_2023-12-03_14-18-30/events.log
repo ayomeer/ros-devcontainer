@@ -1,0 +1,144 @@
+[0.000000] (-) TimerEvent: {}
+[0.004005] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.004231] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.004347] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.004451] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.094088] (-) TimerEvent: {}
+[0.190497] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.194287] (-) TimerEvent: {}
+[0.298732] (-) TimerEvent: {}
+[0.365233] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.400933] (-) TimerEvent: {}
+[0.501757] (-) TimerEvent: {}
+[0.602958] (-) TimerEvent: {}
+[0.606713] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.609383] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[0.612354] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/proj/dev_ws/build/my_bot', '--', '-j4', '-l4'], 'cwd': '/home/ros/proj/dev_ws/build/my_bot', 'env': OrderedDict([('MPLBACKEND', 'TkAgg'), ('HOSTNAME', 'ayomeer-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/ros'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0.0'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', ''), ('PWD', '/home/ros/proj/dev_ws/build/my_bot'), ('PYTHONPATH', '/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.620739] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'cmake'}
+[0.623063] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'build'}
+[0.623933] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/proj/dev_ws/build/my_package', '--', '-j4', '-l4'], 'cwd': '/home/ros/proj/dev_ws/build/my_package', 'env': OrderedDict([('MPLBACKEND', 'TkAgg'), ('HOSTNAME', 'ayomeer-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/ros'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0.0'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', ''), ('PWD', '/home/ros/proj/dev_ws/build/my_package'), ('PYTHONPATH', '/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.703216] (-) TimerEvent: {}
+[0.805488] (-) TimerEvent: {}
+[0.906180] (-) TimerEvent: {}
+[1.006868] (-) TimerEvent: {}
+[1.107556] (-) TimerEvent: {}
+[1.208788] (-) TimerEvent: {}
+[1.309418] (-) TimerEvent: {}
+[1.410126] (-) TimerEvent: {}
+[1.510831] (-) TimerEvent: {}
+[1.611722] (-) TimerEvent: {}
+[1.712769] (-) TimerEvent: {}
+[1.785531] (my_bot) CommandEnded: {'returncode': 0}
+[1.789291] (my_package) CommandEnded: {'returncode': 0}
+[1.812992] (-) TimerEvent: {}
+[1.845633] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[1.875472] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/proj/dev_ws/build/my_bot'], 'cwd': '/home/ros/proj/dev_ws/build/my_bot', 'env': OrderedDict([('MPLBACKEND', 'TkAgg'), ('HOSTNAME', 'ayomeer-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/ros'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0.0'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', ''), ('PWD', '/home/ros/proj/dev_ws/build/my_bot'), ('PYTHONPATH', '/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.880258] (my_package) JobProgress: {'identifier': 'my_package', 'progress': 'install'}
+[1.881207] (my_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/proj/dev_ws/build/my_package'], 'cwd': '/home/ros/proj/dev_ws/build/my_package', 'env': OrderedDict([('MPLBACKEND', 'TkAgg'), ('HOSTNAME', 'ayomeer-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/ros'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0.0'), ('LANG', 'en_US.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', ''), ('PWD', '/home/ros/proj/dev_ws/build/my_package'), ('PYTHONPATH', '/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.898076] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.899560] (my_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.901329] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/config/joy.yaml\n'}
+[1.902448] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/joy.launch.py\n'}
+[1.903118] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[1.903899] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/sim.launch.py\n'}
+[1.905339] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro\n'}
+[1.906185] (my_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.906741] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/inertia_macros.xacro\n'}
+[1.907365] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/materials.xacro\n'}
+[1.907955] (my_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.908465] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/my_bot.urdf.xacro\n'}
+[1.909092] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[1.909508] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/launch/listener.launch.py\n'}
+[1.910088] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/launch/talker.launch.py\n'}
+[1.910487] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[1.910976] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package\n'}
+[1.911516] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[1.911915] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package\n'}
+[1.912558] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[1.912965] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh\n'}
+[1.913543] (-) TimerEvent: {}
+[1.914109] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv\n'}
+[1.915752] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[1.916730] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/path.sh\n'}
+[1.917743] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/path.sh\n'}
+[1.918186] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/path.dsv\n'}
+[1.918866] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[1.919650] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.bash\n'}
+[1.920411] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.bash\n'}
+[1.921098] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.sh\n'}
+[1.921727] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.sh\n'}
+[1.922315] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[1.922961] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.zsh\n'}
+[1.923563] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[1.924097] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.dsv\n'}
+[1.924603] (my_package) StdoutLine: {'line': b'-- Symlinking: /home/ros/proj/dev_ws/install/my_package/share/my_package/package.dsv\n'}
+[1.925041] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/package.dsv\n'}
+[1.949307] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/packages/my_package\n'}
+[1.950075] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake\n'}
+[1.950698] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[1.951232] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[1.951970] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[1.952900] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/package.xml\n'}
+[1.955095] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake\n'}
+[1.956411] (my_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/package.xml\n'}
+[1.958708] (my_package) CommandEnded: {'returncode': 0}
+[2.018549] (-) TimerEvent: {}
+[2.120091] (-) TimerEvent: {}
+[2.185139] (my_bot) CommandEnded: {'returncode': 0}
+[2.220546] (-) TimerEvent: {}
+[2.322225] (-) TimerEvent: {}
+[2.423577] (-) TimerEvent: {}
+[2.526890] (-) TimerEvent: {}
+[2.627658] (-) TimerEvent: {}
+[2.647405] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[2.728277] (-) TimerEvent: {}
+[2.830203] (-) TimerEvent: {}
+[2.924775] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[2.930351] (-) TimerEvent: {}
+[3.030973] (-) TimerEvent: {}
+[3.131656] (-) TimerEvent: {}
+[3.201656] (my_robot_controller) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ros/proj/dev_ws/build/my_robot_controller/build', '--no-deps', 'install_data'], 'cwd': '/home/ros/proj/dev_ws/build/my_robot_controller', 'env': {'MPLBACKEND': 'TkAgg', 'HOSTNAME': 'ayomeer-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS': '1', 'HOME': '/home/ros', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/opt/ros/humble', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': 'host.docker.internal:0.0', 'LANG': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': '', 'PWD': '/home/ros/proj/dev_ws/build/my_robot_controller', 'PYTHONPATH': '/home/ros/proj/dev_ws/build/my_robot_controller/prefix_override:/home/ros/proj/dev_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages', 'NVIDIA_VISIBLE_DEVICES': '0', 'COLCON': '1'}, 'shell': False}
+[3.231859] (-) TimerEvent: {}
+[3.332504] (-) TimerEvent: {}
+[3.433124] (-) TimerEvent: {}
+[3.533779] (-) TimerEvent: {}
+[3.634391] (-) TimerEvent: {}
+[3.735013] (-) TimerEvent: {}
+[3.835631] (-) TimerEvent: {}
+[3.936235] (-) TimerEvent: {}
+[4.036826] (-) TimerEvent: {}
+[4.137473] (-) TimerEvent: {}
+[4.164325] (my_robot_controller) StdoutLine: {'line': b'running develop\n'}
+[4.165525] (my_robot_controller) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.165983] (my_robot_controller) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.170553] (my_robot_controller) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.171028] (my_robot_controller) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.237612] (-) TimerEvent: {}
+[4.339661] (-) TimerEvent: {}
+[4.440359] (-) TimerEvent: {}
+[4.540993] (-) TimerEvent: {}
+[4.641578] (-) TimerEvent: {}
+[4.698589] (my_robot_controller) StdoutLine: {'line': b'running egg_info\n'}
+[4.699239] (my_robot_controller) StdoutLine: {'line': b'writing my_robot_controller.egg-info/PKG-INFO\n'}
+[4.699967] (my_robot_controller) StdoutLine: {'line': b'writing dependency_links to my_robot_controller.egg-info/dependency_links.txt\n'}
+[4.700692] (my_robot_controller) StdoutLine: {'line': b'writing entry points to my_robot_controller.egg-info/entry_points.txt\n'}
+[4.701320] (my_robot_controller) StdoutLine: {'line': b'writing requirements to my_robot_controller.egg-info/requires.txt\n'}
+[4.701697] (my_robot_controller) StdoutLine: {'line': b'writing top-level names to my_robot_controller.egg-info/top_level.txt\n'}
+[4.707829] (my_robot_controller) StdoutLine: {'line': b"reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'\n"}
+[4.711590] (my_robot_controller) StdoutLine: {'line': b"writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'\n"}
+[4.716912] (my_robot_controller) StdoutLine: {'line': b'running build_ext\n'}
+[4.717698] (my_robot_controller) StdoutLine: {'line': b'Creating /home/ros/proj/dev_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)\n'}
+[4.721157] (my_robot_controller) StdoutLine: {'line': b'Installing controller_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[4.721830] (my_robot_controller) StdoutLine: {'line': b'Installing draw_circle_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[4.722361] (my_robot_controller) StdoutLine: {'line': b'Installing node_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[4.722845] (my_robot_controller) StdoutLine: {'line': b'Installing pose_subscriber_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller\n'}
+[4.723349] (my_robot_controller) StdoutLine: {'line': b'\n'}
+[4.723795] (my_robot_controller) StdoutLine: {'line': b'Installed /home/ros/proj/dev_ws/build/my_robot_controller\n'}
+[4.724200] (my_robot_controller) StdoutLine: {'line': b'running install_data\n'}
+[4.741755] (-) TimerEvent: {}
+[4.842506] (-) TimerEvent: {}
+[4.847314] (my_robot_controller) CommandEnded: {'returncode': 0}
+[4.943038] (-) TimerEvent: {}
+[5.044865] (-) TimerEvent: {}
+[5.100344] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 0}
+[5.103610] (-) EventReactorShutdown: {}

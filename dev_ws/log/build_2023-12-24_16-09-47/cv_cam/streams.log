@@ -1,0 +1,21 @@
+[2.949s] Invoking command in '/home/ros/proj/dev_ws/build/cv_cam': PYTHONPATH=/home/ros/proj/dev_ws/build/cv_cam/prefix_override:/home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/cv_cam/build --no-deps install_data
+[3.950s] running develop
+[3.951s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.951s]   warnings.warn(
+[3.956s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.956s]   warnings.warn(
+[4.522s] running egg_info
+[4.522s] writing cv_cam.egg-info/PKG-INFO
+[4.524s] writing dependency_links to cv_cam.egg-info/dependency_links.txt
+[4.524s] writing entry points to cv_cam.egg-info/entry_points.txt
+[4.525s] writing requirements to cv_cam.egg-info/requires.txt
+[4.525s] writing top-level names to cv_cam.egg-info/top_level.txt
+[4.532s] reading manifest file 'cv_cam.egg-info/SOURCES.txt'
+[4.535s] writing manifest file 'cv_cam.egg-info/SOURCES.txt'
+[4.541s] running build_ext
+[4.542s] Creating /home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages/cv-cam.egg-link (link to .)
+[4.546s] Installing cam_executable script to /home/ros/proj/dev_ws/install/cv_cam/lib/cv_cam
+[4.547s] 
+[4.547s] Installed /home/ros/proj/dev_ws/build/cv_cam
+[4.548s] running install_data
+[4.669s] Invoked command in '/home/ros/proj/dev_ws/build/cv_cam' returned '0': PYTHONPATH=/home/ros/proj/dev_ws/build/cv_cam/prefix_override:/home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/cv_cam/build --no-deps install_data

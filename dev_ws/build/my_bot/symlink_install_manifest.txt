@@ -1,5 +1,6 @@
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/config/joy.yaml
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/cam.launch.py
+/home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/camera.launch.py
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/joy.launch.py
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
 /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/sim.launch.py

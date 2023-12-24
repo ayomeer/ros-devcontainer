@@ -1,0 +1,24 @@
+[2.842s] Invoking command in '/home/ros/proj/dev_ws/build/my_robot_controller': PYTHONPATH=/home/ros/proj/dev_ws/build/my_robot_controller/prefix_override:/home/ros/proj/dev_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/my_robot_controller/build --no-deps install_data
+[3.804s] running develop
+[3.805s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.805s]   warnings.warn(
+[3.810s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.810s]   warnings.warn(
+[4.338s] running egg_info
+[4.339s] writing my_robot_controller.egg-info/PKG-INFO
+[4.339s] writing dependency_links to my_robot_controller.egg-info/dependency_links.txt
+[4.340s] writing entry points to my_robot_controller.egg-info/entry_points.txt
+[4.340s] writing requirements to my_robot_controller.egg-info/requires.txt
+[4.341s] writing top-level names to my_robot_controller.egg-info/top_level.txt
+[4.347s] reading manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[4.351s] writing manifest file 'my_robot_controller.egg-info/SOURCES.txt'
+[4.356s] running build_ext
+[4.357s] Creating /home/ros/proj/dev_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[4.360s] Installing controller_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller
+[4.361s] Installing draw_circle_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller
+[4.361s] Installing node_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller
+[4.362s] Installing pose_subscriber_executable script to /home/ros/proj/dev_ws/install/my_robot_controller/lib/my_robot_controller
+[4.363s] 
+[4.363s] Installed /home/ros/proj/dev_ws/build/my_robot_controller
+[4.363s] running install_data
+[4.485s] Invoked command in '/home/ros/proj/dev_ws/build/my_robot_controller' returned '0': PYTHONPATH=/home/ros/proj/dev_ws/build/my_robot_controller/prefix_override:/home/ros/proj/dev_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/my_robot_controller/build --no-deps install_data

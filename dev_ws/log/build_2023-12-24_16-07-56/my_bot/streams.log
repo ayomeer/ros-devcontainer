@@ -1,0 +1,43 @@
+[2.026s] Invoking command in '/home/ros/proj/dev_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --build /home/ros/proj/dev_ws/build/my_bot -- -j4 -l4
+[3.470s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.472s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.473s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.475s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.475s] -- Added test 'lint_cmake' to check CMake code style
+[3.476s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.479s] -- Added test 'xmllint' to check XML markup files
+[3.480s] -- Configuring done
+[3.481s] -- Generating done
+[3.482s] -- Build files have been written to: /home/ros/proj/dev_ws/build/my_bot
+[3.495s] Invoked command in '/home/ros/proj/dev_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --build /home/ros/proj/dev_ws/build/my_bot -- -j4 -l4
+[3.608s] Invoking command in '/home/ros/proj/dev_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --install /home/ros/proj/dev_ws/build/my_bot
+[3.631s] -- Install configuration: ""
+[3.632s] -- Execute custom install script
+[3.634s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/config/joy.yaml
+[3.635s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/cam.launch.py
+[3.636s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/camera.launch.py
+[3.636s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/joy.launch.py
+[3.637s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+[3.638s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/launch/sim.launch.py
+[3.639s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/camera.xacro
+[3.640s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro
+[3.640s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/inertia_macros.xacro
+[3.641s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/materials.xacro
+[3.642s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/my_bot.urdf.xacro
+[3.642s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/description/robot_core.xacro
+[3.643s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[3.644s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[3.644s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[3.646s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[3.647s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/path.sh
+[3.648s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/environment/path.dsv
+[3.650s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.bash
+[3.651s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.sh
+[3.654s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.zsh
+[3.655s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/local_setup.dsv
+[3.655s] -- Symlinking: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/package.dsv
+[3.681s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[3.682s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[3.683s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[3.684s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_bot/share/my_bot/package.xml
+[3.696s] Invoked command in '/home/ros/proj/dev_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --install /home/ros/proj/dev_ws/build/my_bot

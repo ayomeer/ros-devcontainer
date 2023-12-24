@@ -1,0 +1,23 @@
+[0.430s] Invoking command in '/home/ros/proj/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/proj/dev_ws/build/my_package -- -j4 -l4
+[1.597s] Invoked command in '/home/ros/proj/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros/proj/dev_ws/build/my_package -- -j4 -l4
+[1.703s] Invoking command in '/home/ros/proj/dev_ws/build/my_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/proj/dev_ws/build/my_package
+[1.727s] -- Install configuration: ""
+[1.728s] -- Execute custom install script
+[1.733s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/launch/listener.launch.py
+[1.735s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/launch/talker.launch.py
+[1.738s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[1.739s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[1.740s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[1.741s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[1.742s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/path.sh
+[1.742s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/path.dsv
+[1.744s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.bash
+[1.745s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.sh
+[1.746s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.zsh
+[1.747s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.dsv
+[1.748s] -- Symlinking: /home/ros/proj/dev_ws/install/my_package/share/my_package/package.dsv
+[1.767s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[1.768s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[1.768s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[1.769s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/package.xml
+[1.777s] Invoked command in '/home/ros/proj/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros/proj/dev_ws/build/my_package

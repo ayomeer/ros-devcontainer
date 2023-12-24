@@ -1,0 +1,22 @@
+[5.361s] Invoking command in '/home/ros/proj/dev_ws/build/cv_cam': PYTHONPATH=/home/ros/proj/dev_ws/build/cv_cam/prefix_override:/home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/cv_cam/build --no-deps install_data
+[6.394s] running develop
+[6.396s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[6.396s]   warnings.warn(
+[6.401s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.401s]   warnings.warn(
+[6.978s] running egg_info
+[6.979s] writing cv_cam.egg-info/PKG-INFO
+[6.979s] writing dependency_links to cv_cam.egg-info/dependency_links.txt
+[6.980s] writing entry points to cv_cam.egg-info/entry_points.txt
+[6.981s] writing requirements to cv_cam.egg-info/requires.txt
+[6.981s] writing top-level names to cv_cam.egg-info/top_level.txt
+[6.988s] reading manifest file 'cv_cam.egg-info/SOURCES.txt'
+[6.991s] writing manifest file 'cv_cam.egg-info/SOURCES.txt'
+[6.997s] running build_ext
+[6.998s] Creating /home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages/cv-cam.egg-link (link to .)
+[7.002s] Installing cam_executable script to /home/ros/proj/dev_ws/install/cv_cam/lib/cv_cam
+[7.003s] 
+[7.003s] Installed /home/ros/proj/dev_ws/build/cv_cam
+[7.004s] running install_data
+[7.004s] copying package.xml -> /home/ros/proj/dev_ws/install/cv_cam/share/cv_cam
+[7.143s] Invoked command in '/home/ros/proj/dev_ws/build/cv_cam' returned '0': PYTHONPATH=/home/ros/proj/dev_ws/build/cv_cam/prefix_override:/home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/cv_cam/build --no-deps install_data

@@ -1,0 +1,33 @@
+[1.799s] Invoking command in '/home/ros/proj/dev_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --build /home/ros/proj/dev_ws/build/my_package -- -j4 -l4
+[3.238s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.239s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.240s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.241s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.242s] -- Added test 'lint_cmake' to check CMake code style
+[3.243s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.244s] -- Added test 'xmllint' to check XML markup files
+[3.246s] -- Configuring done
+[3.246s] -- Generating done
+[3.247s] -- Build files have been written to: /home/ros/proj/dev_ws/build/my_package
+[3.248s] Invoked command in '/home/ros/proj/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --build /home/ros/proj/dev_ws/build/my_package -- -j4 -l4
+[3.354s] Invoking command in '/home/ros/proj/dev_ws/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --install /home/ros/proj/dev_ws/build/my_package
+[3.382s] -- Install configuration: ""
+[3.386s] -- Execute custom install script
+[3.390s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/launch/listener.launch.py
+[3.395s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/launch/talker.launch.py
+[3.401s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[3.406s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[3.410s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[3.411s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[3.411s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/path.sh
+[3.413s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/environment/path.dsv
+[3.415s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.bash
+[3.417s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.sh
+[3.418s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.zsh
+[3.420s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/local_setup.dsv
+[3.422s] -- Symlinking: /home/ros/proj/dev_ws/install/my_package/share/my_package/package.dsv
+[3.453s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/ament_index/resource_index/packages/my_package
+[3.453s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[3.454s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[3.454s] -- Up-to-date symlink: /home/ros/proj/dev_ws/install/my_package/share/my_package/package.xml
+[3.702s] Invoked command in '/home/ros/proj/dev_ws/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/proj/dev_ws/install/my_robot_controller:/home/ros/proj/dev_ws/install/cv_cam:/opt/ros/humble /usr/bin/cmake --install /home/ros/proj/dev_ws/build/my_package

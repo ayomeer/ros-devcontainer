@@ -6,23 +6,21 @@ services:
     working_dir: /home/ros/proj/dev_ws
     network_mode: host  
 
+    devices: 
+      - /dev/video0:/dev/video0
+
     volumes:
       - ..:/home/ros/proj       # mount project directory
-      - /dev/input:/dev/input/  # pass through devices (xpad)
+      - /tmp/argus_socket:/tmp/argus_socket
       - /tmp/.X11-unix:/tmp/.X11-unix # display
 
-
-
-    device_cgroup_rules:
-      - 'c *:* rmw'
-
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu] # equivalent of '--gpus=all' in docker run command
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu] # equivalent of '--gpus=all' in docker run command
 
     environment:
      - DISPLAY=$DISPLAY

@@ -3,7 +3,7 @@
 
 import rclpy 
 from rclpy.node import Node
-from sensor_msgs import Image # publishing msg_type: sensor_msgs/msg/Image
+from sensor_msgs.msg import Image # publishing msg_type: sensor_msgs/msg/Image
 import cv2 
 from cv_bridge import CvBridge # openCV <-> ROS bridge
 
@@ -14,6 +14,7 @@ class ImagePublisher(Node):
         self.get_logger().info("Initializing camera_node")
 
         self.create_publisher(Image, 'image_raw', 10)
+        self.get_logger().info("Create publisher")
 
         # VideoCapture(const String &filename, int apiPreference)
         self.cap = cap = cv2.VideoCapture(
@@ -22,18 +23,18 @@ class ImagePublisher(Node):
             video/x-raw,format=BGRx ! videoconvert ! 
             video/x-raw,format=BGR ! appsink drop=1""", cv2.CAP_GSTREAMER) 
         
-        self.cv_bridge = CvBridge()
+        # self.cv_bridge = CvBridge()
         
 
-        self.create_timer(1.0, self.timer_callback)
+    #     self.create_timer(1.0, self.timer_callback)
 
-    def timer_callback(self):
-        self.get_logger().info("Publish video frame")
-        ret, frame = self.cap.read()                                  
+    # def timer_callback(self):
+    #     self.get_logger().info("Publish video frame")
+    #     ret, frame = self.cap.read()                                  
         
-        if ret == True:                                                
-            self.publisher_.publish(
-                self.cv_bridge.cv2_to_imgmsg(frame, 'bgr8'))
+    #     if ret == True:                                                
+    #         self.publisher.publish(
+    #             self.cv_bridge.cv2_to_imgmsg(frame, 'bgr8'))
 
 
 
