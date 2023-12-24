@@ -3,6 +3,7 @@ services:
     image: ayomeer/ros-devcontainer:dev-jetson
     user: "1000:1000"
     container_name: ros-devcontainer
+    working_dir: /home/ros/proj/dev_ws
     network_mode: host  
 
     volumes:
