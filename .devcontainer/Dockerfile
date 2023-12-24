@@ -116,6 +116,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
   && chmod 0440 /etc/sudoers.d/$USERNAME \
   && rm -rf /var/lib/apt/lists/*
 
+RUN usermod -aG video $USERNAME 
+
 # Use default bashrc for user
 RUN cp /etc/skel/.bashrc /home/$USERNAME
 
@@ -150,6 +152,7 @@ RUN case "${TARGETPLATFORM}" in \
           <Discovery> \n\
             <ParticipantIndex>auto</ParticipantIndex> \n\
             <Peers> \n\
+              <Peer Address='localhost'/> \n\
               <Peer Address='192.168.1.110'/> \n\
             </Peers> \n\
           </Discovery> \n\
@@ -169,6 +172,7 @@ RUN case "${TARGETPLATFORM}" in \
           <Discovery> \n\
             <ParticipantIndex>auto</ParticipantIndex> \n\
             <Peers> \n\
+              <Peer Address='localhost'/> \n\
               <Peer Address='192.168.1.111'/> \n\
             </Peers> \n\
           </Discovery> \n\
