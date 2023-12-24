@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating cv_cam.egg-info
+writing cv_cam.egg-info/PKG-INFO
+writing dependency_links to cv_cam.egg-info/dependency_links.txt
+writing entry points to cv_cam.egg-info/entry_points.txt
+writing requirements to cv_cam.egg-info/requires.txt
+writing top-level names to cv_cam.egg-info/top_level.txt
+writing manifest file 'cv_cam.egg-info/SOURCES.txt'
+reading manifest file 'cv_cam.egg-info/SOURCES.txt'
+writing manifest file 'cv_cam.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages/cv-cam.egg-link (link to .)
+Installing cam_executable script to /home/ros/proj/dev_ws/install/cv_cam/lib/cv_cam
+
+Installed /home/ros/proj/dev_ws/build/cv_cam
+running install_data
+creating /home/ros/proj/dev_ws/install/cv_cam/share/ament_index
+creating /home/ros/proj/dev_ws/install/cv_cam/share/ament_index/resource_index
+creating /home/ros/proj/dev_ws/install/cv_cam/share/ament_index/resource_index/packages
+copying resource/cv_cam -> /home/ros/proj/dev_ws/install/cv_cam/share/ament_index/resource_index/packages
+copying package.xml -> /home/ros/proj/dev_ws/install/cv_cam/share/cv_cam

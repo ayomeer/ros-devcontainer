@@ -1,0 +1,24 @@
+[1.167s] Invoking command in '/home/ros/proj/dev_ws/build/cv_cam': PYTHONPATH=/home/ros/proj/dev_ws/build/cv_cam/prefix_override:/home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/cv_cam/build --no-deps install_data
+[1.389s] running develop
+[1.525s] running egg_info
+[1.525s] creating cv_cam.egg-info
+[1.525s] writing cv_cam.egg-info/PKG-INFO
+[1.526s] writing dependency_links to cv_cam.egg-info/dependency_links.txt
+[1.526s] writing entry points to cv_cam.egg-info/entry_points.txt
+[1.526s] writing requirements to cv_cam.egg-info/requires.txt
+[1.526s] writing top-level names to cv_cam.egg-info/top_level.txt
+[1.526s] writing manifest file 'cv_cam.egg-info/SOURCES.txt'
+[1.527s] reading manifest file 'cv_cam.egg-info/SOURCES.txt'
+[1.527s] writing manifest file 'cv_cam.egg-info/SOURCES.txt'
+[1.529s] running build_ext
+[1.529s] Creating /home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages/cv-cam.egg-link (link to .)
+[1.529s] Installing cam_executable script to /home/ros/proj/dev_ws/install/cv_cam/lib/cv_cam
+[1.529s] 
+[1.530s] Installed /home/ros/proj/dev_ws/build/cv_cam
+[1.530s] running install_data
+[1.530s] creating /home/ros/proj/dev_ws/install/cv_cam/share/ament_index
+[1.530s] creating /home/ros/proj/dev_ws/install/cv_cam/share/ament_index/resource_index
+[1.530s] creating /home/ros/proj/dev_ws/install/cv_cam/share/ament_index/resource_index/packages
+[1.530s] copying resource/cv_cam -> /home/ros/proj/dev_ws/install/cv_cam/share/ament_index/resource_index/packages
+[1.530s] copying package.xml -> /home/ros/proj/dev_ws/install/cv_cam/share/cv_cam
+[1.558s] Invoked command in '/home/ros/proj/dev_ws/build/cv_cam' returned '0': PYTHONPATH=/home/ros/proj/dev_ws/build/cv_cam/prefix_override:/home/ros/proj/dev_ws/install/cv_cam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/ros/proj/dev_ws/build/cv_cam/build --no-deps install_data

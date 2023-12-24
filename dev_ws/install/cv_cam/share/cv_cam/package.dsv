@@ -1,0 +1,9 @@
+source;share/cv_cam/hook/pythonpath.ps1
+source;share/cv_cam/hook/pythonpath.dsv
+source;share/cv_cam/hook/pythonpath.sh
+source;share/cv_cam/hook/ament_prefix_path.ps1
+source;share/cv_cam/hook/ament_prefix_path.dsv
+source;share/cv_cam/hook/ament_prefix_path.sh
+source;../../build/cv_cam/share/cv_cam/hook/pythonpath_develop.ps1
+source;../../build/cv_cam/share/cv_cam/hook/pythonpath_develop.dsv
+source;../../build/cv_cam/share/cv_cam/hook/pythonpath_develop.sh

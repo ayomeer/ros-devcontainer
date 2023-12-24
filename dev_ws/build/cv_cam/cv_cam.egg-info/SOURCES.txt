@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+cv_cam/__init__.py
+cv_cam/camera_node.py
+cv_cam.egg-info/PKG-INFO
+cv_cam.egg-info/SOURCES.txt
+cv_cam.egg-info/dependency_links.txt
+cv_cam.egg-info/entry_points.txt
+cv_cam.egg-info/requires.txt
+cv_cam.egg-info/top_level.txt
+cv_cam.egg-info/zip-safe
+resource/cv_cam
